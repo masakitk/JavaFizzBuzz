@@ -21,7 +21,7 @@ public class FizzBuzzTest {
 				"Fizz", "22", "23", "Fizz", "Buzz", "26", "Fizz", "28","29", "FizzBuzz",
 		};
 		
-		assertThat(new FizzBuzz().convertNumbers(numbers), equalTo(expected));
+		assertThat(new FizzBuzzNumbers(numbers).convert(), equalTo(expected));
 	}
 
 }
