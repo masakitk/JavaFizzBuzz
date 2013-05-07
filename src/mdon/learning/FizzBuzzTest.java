@@ -2,13 +2,14 @@ package mdon.learning;
 
 import static org.hamcrest.CoreMatchers.*;
 import static org.junit.Assert.*;
-import FizzBuzz;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 public class FizzBuzzTest {
 
 	@Test
+	@Ignore
 	public void Žó“üƒeƒXƒg_30‚Ü‚Å‚ÌFizzBuzz•ÏŠ·() {
 		int[] numbers = new int[]{
 				1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 
@@ -20,8 +21,7 @@ public class FizzBuzzTest {
 				"Fizz", "22", "23", "Fizz", "Buzz", "26", "Fizz", "28","29", "FizzBuzz",
 		};
 		
-		assertThat(new FizzBuzz().convert(numbers), equalTo(expected));
-		
+		assertThat(new FizzBuzz().convertNumbers(numbers), equalTo(expected));
 	}
 
 }
