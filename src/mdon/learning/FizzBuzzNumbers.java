@@ -10,5 +10,10 @@ public class FizzBuzzNumbers {
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+	public static void convertNumber(int i) {
+		// TODO Auto-generated method stub
+		
+	}
 	
 }
