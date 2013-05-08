@@ -1,19 +1,21 @@
 package mdon.learning;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class FizzBuzzNumbers {
 
+	private final int[] numbers;
+
 	public FizzBuzzNumbers(int[] numbers) {
-		// TODO Auto-generated constructor stub
+		this.numbers = numbers;
 	}
 
 	public String[] convert() {
-		// TODO Auto-generated method stub
-		return null;
+		List<String> converted = new ArrayList<String>();
+		for (int i : numbers){
+			converted.add(FizzBuzzNumber.New(i).convert());
+		}
+		return converted.toArray(new String[0]);
 	}
-
-	public static void convertNumber(int i) {
-		// TODO Auto-generated method stub
-		
-	}
-	
 }

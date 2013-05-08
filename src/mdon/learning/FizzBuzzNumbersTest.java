@@ -12,7 +12,7 @@ import org.junit.Test;
 public class FizzBuzzNumbersTest {
 
 	@Mocked
-	private FizzBuzzNumberUtil fizzBuzzNumberUtil = null; 
+	private FizzBuzzNumber fizzBuzzNumber; 
 	
 	@Test
 	@Ignore
@@ -34,13 +34,15 @@ public class FizzBuzzNumbersTest {
 	public void 単体テスト_数字配列の各要素に対して変換処理が呼び出されること() {
 		
 		new Expectations() { { 
-			FizzBuzzNumberUtil.convert(1); result = any;
-			FizzBuzzNumberUtil.convert(2); result = any;
-			FizzBuzzNumberUtil.convert(3); result = any;
-			FizzBuzzNumberUtil.convert(4); result = any;
+			FizzBuzzNumber.New(1); returns(fizzBuzzNumber);
+			fizzBuzzNumber.convert(); returns(any);
+			FizzBuzzNumber.New(2); returns(fizzBuzzNumber);
+			fizzBuzzNumber.convert(); returns(any);
+			FizzBuzzNumber.New(3); returns(fizzBuzzNumber);
+			fizzBuzzNumber.convert(); returns(any);
 		} };
 		
-		int[] numbers = new int[]{1,2,3,4};
+		int[] numbers = new int[]{1, 2, 3};
 		new FizzBuzzNumbers(numbers).convert();
 		
 		
