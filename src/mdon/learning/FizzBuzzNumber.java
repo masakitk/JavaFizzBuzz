@@ -2,14 +2,17 @@ package mdon.learning;
 
 public class FizzBuzzNumber {
 
-	private final int i;
+	private int i;
 
 	public FizzBuzzNumber(int i) {
 		this.i = i;
 	}
 
 	public String convert() {
-		return null;
+		return i % 15 == 0 ? "FizzBuzz" 
+				: i % 5 == 0 ? "Buzz"
+				: i % 3 == 0 ? "Fizz"
+				: String.valueOf(i);
 	}
 
 	public static FizzBuzzNumber New(int i) {
