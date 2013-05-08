@@ -14,7 +14,7 @@ public class FizzBuzzNumbers {
 	public String[] convert() {
 		List<String> converted = new ArrayList<String>();
 		for (int i : numbers){
-			converted.add(FizzBuzzNumber.New(i).convert());
+			converted.add(new FizzBuzzNumber(i).convert());
 		}
 		return converted.toArray(new String[0]);
 	}

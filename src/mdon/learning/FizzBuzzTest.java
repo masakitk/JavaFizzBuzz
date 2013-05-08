@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class AT_FizzBuzzNumbers {
+public class FizzBuzzTest {
 	@Test
 //	@Ignore
 	public void Žó“üƒeƒXƒg_30‚Ü‚Å‚ÌFizzBuzz•ÏŠ·() {
@@ -19,7 +19,7 @@ public class AT_FizzBuzzNumbers {
 				"Fizz", "22", "23", "Fizz", "Buzz", "26", "Fizz", "28","29", "FizzBuzz",
 		};
 		
-		assertThat(new FizzBuzzNumbers(numbers).convert(), equalTo(expected));
+		assertThat(FizzBuzz.convert(numbers), equalTo(expected));
 	}
 	
 
