@@ -44,8 +44,6 @@ public class FizzBuzzNumbersTest {
 		
 		int[] numbers = new int[]{1, 2, 3};
 		new FizzBuzzNumbers(numbers).convert();
-		
-		
 	}
 
 }
