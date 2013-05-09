@@ -1,10 +1,10 @@
 package mdon.learning;
 
-public class FizzBuzzNumber {
+public class FizzBuzzableNumber {
 
 	private int i;
 
-	public FizzBuzzNumber(int i) {
+	public FizzBuzzableNumber(int i) {
 		this.i = i;
 	}
 
